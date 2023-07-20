@@ -12,6 +12,7 @@ void main(List<String> arguments) {
   del.name = 'Dell';
   del.ram = '256gb';
   del.display();
+
   House rose = House(5, 'Bunamwaya', 'Excellent');
   House mary = House(2, 'Lweza', 'Excellent');
   House beat = House(3, 'Zana', 'Excellent');
@@ -22,10 +23,13 @@ void main(List<String> arguments) {
     print('House Name: ${house.name}');
     print('House Prize: ${house.prize}');
   }
+
   Person alex = Person('Alex', 'Ssentongo', Gender.Male);
   alex.display();
+
   Cat kitty = Cat(0, 'Grand Pa', 'gold', 'meow');
   kitty.display();
+
   Camera kodak = Camera();
   kodak.setId(0);
   kodak.setBrand('Kodak');
@@ -36,6 +40,7 @@ void main(List<String> arguments) {
   print('color: ${kodak.getColor()}');
   print('prize: ${kodak.getPrize()}');
   print('Hello world: ${cli.calculate()}!');
+  
   List<Question> questions = [
     Question(
       'Who is the president of Uganda?',
